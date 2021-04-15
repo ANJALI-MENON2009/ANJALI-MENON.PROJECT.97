@@ -1,0 +1,122 @@
+.header
+{
+	color: white;font-family: 'Reggae One', cursive; font-size: 45px; letter-spacing: 5px;margin-top: 50px; margin-left:7px; font-weight:bold;
+}
+.header img
+{
+	width: 140px;margin-right: -8px; 
+}
+.header_2 {
+    color:black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body {
+    background-image: linear-gradient(to bottom, black, rgba(102,101,120,100));
+     }
+
+.logo {
+       width: 350px;
+       margin-top: 30px;
+       border-radius: 40px;
+      }
+
+.login_div
+{
+	background: rgb(248, 217, 217);
+  float: none;
+  border-radius: 15px;
+  height: 650px;
+  width:500px;
+  margin-top:40px;
+  padding-bottom:350px;
+ 
+}
+#login_button
+{
+	width: 80%;border-radius: 5px;
+}
+#intro_1 {
+    font-family: 'Courgette', cursive;
+    color:indigo;
+    font-size: 25px;
+}
+#intro_2 {
+    font-family: 'Acme', sans-serif;
+    color:darkblue;
+    font-size:23px;
+}
+#intro_3 {
+    color:darkred;
+    font-family: 'Audiowide', cursive;
+    font-size: 17px;
+}
+
+  #user_input {
+    font-family: 'Cookie', cursive;
+    font-size:20px;
+  }
+  
+  .dot
+  { 
+    height: 55px; width: 55px; 
+    background-color:transparent; 
+    border-radius: 50%; border:2px solid; 
+    display: inline-block; position: absolute; 
+    margin-left:47px;
+     margin-top:75px; 
+    border-color:black; 
+
+  }
+  .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  /* Control the left side */
+  .left {
+    left: 0;
+    background-color: black;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: red;
+  }
+  
+  .centered img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  #gif {
+    height:200px;
+    width:200px;
+  }
+  @media screen and (max-width: 960px) {
+    .split{
+    width: 100vw;   
+    } 
+    .login_div{
+      width: 80vw;
+      height: 700px;
+    } 
+  }
+#myInput {
+    width:473px;
+    font-family: 'Cookie', cursive;
+    font-size:20px;
+    border:1px solid;
+    border-color: rgb(182, 173, 173);
+    margin-right:10px;
+    border-radius: 4.5px;
+    color:black;
+}
+
+/*font-family: 'Great Vibes', cursive; */
+ 
+

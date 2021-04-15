@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Let's Chat Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="room.css">
+<script src="room.js"></script>
+</head>
+<body>
+    <div class="container">
+       <div>
+
+      <br> <br>
+        <button class="logout" id="logout_btn" onclick="logout()" > LOGOUT <i class="fa fa-sign-out" ></i></button>
+    </div>
+        <br>
+   <center>
+       <br> <br>
+       <br>
+       <h3 class="color_white" id="welcome_lbl" > </h3>
+ <br> 
+ <h1 class="header_room" id="heading" style="font-family: Times New Roman; color: yellow;" onmouseover="change()" onmouseout="normal()">	
+        Let's Chat!	
+        <sup>
+            <img src="notify.gif">
+        </sup>
+    </h1>
+    
+    <div class="form-group input_div_room_page">
+        <br>  
+        <label id="add_room_lbl" style="font-size:24px; color:red; font-family: 'Parisienne', cursive; font-variant: unset;">Add Room :</label> 
+        <br> <br>
+ <div class="col-3 input-effect" >
+    <input class="effect-1" id="room_name_input" type="text" placeholder="Enter room name" style="font-family: 'Teko', sans-serif; color:black">
+ </div> 
+    </div> <br> 
+    <button class="button" id="btn_add_room"  onclick="addRoom()"><span>Add Room </span></button>
+    
+  <br> <br>
+  <h3 class="color_white" style="font-weight:bold;display:none ;font-family: 'Great Vibes', cursive; ;color:rgb(243, 7, 77)">#TrendingRooms</h3>
+  <br> 
+  <div id="output" style="height: fit-content;">
+      
+  </div>
+</div>
+
+<div class="wave-container">
+    <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#f93ae5ff"></stop><stop offset="95%" stop-color="#3fee88ff"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,250 0,250 C 148.07142857142856,271.4642857142857 296.1428571428571,292.92857142857144 415,294 C 533.8571428571429,295.07142857142856 623.4999999999999,275.75 713,246 C 802.5000000000001,216.24999999999997 891.8571428571429,176.07142857142858 1013,175 C 1134.142857142857,173.92857142857142 1287.0714285714284,211.96428571428572 1440,250 C 1440,250 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150"></path></svg>
+</div>
+</center>
+<script>
+var welcome_user = localStorage.getItem("User name") ;
+document.getElementById("welcome_lbl").innerHTML = "<h1 style='font-family:Papyrus;  color:white;;font-weight:900;'>Welcome " + welcome_user + "!</h1> " ;
+</script>
+</body> </html>

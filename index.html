@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Let's chat!
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+    </head>
+    <body onload="toggleButtonState()">
+        <center>
+        <div class="hidden-sm hidden-xs col-lg-6 col-md-4 col-sm-1 col-xs-1 split left" id="splits_1">
+            <div class="centered">
+                <img src="LC.gif" id="gif">
+                <h1 class="header">	
+                    Let's Chat!	
+                    <sup>
+                <img src="notify.gif">
+                </sup>
+            </h1>
+            </div>
+        </div>
+          
+          <div class="w-100 h-700 col-lg-6 col-md-6 col-sm-8 col-xs-12 split right" id="splits">
+            <div class="centered">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+                    
+                    <span class="dot"></span>
+                    <img src="logo.png" class="logo">
+                     <br> 
+                    <h3 id="intro_1">Chat with one and all with Let's Chat!</h3> <br>  
+                <h3 id="intro_2">Join Let's Chat today...</h4> <br>
+                <label id="enter-message" style="color: rgb(2, 107, 33); font-size: 18px; font-weight: 900; font-family: 'Lobster Two', cursive;"> Press enter after filling username and password. </label>
+              <br> 
+                <div class="form-group">
+                  <label id="intro_3">User Name:</label>
+                  <input class="form-control" id="user_input" placeholder="Enter the username" onchange="toggleButtonState()">
+              <br> 
+              <label id="intro_3">Password:</label>
+                  <input style="width:100% ;" class="form-control" type="password" value="" id="myInput" placeholder="Enter the password" onchange="toggleButtonState()"><br>
+                  <input type="checkbox" onclick="myFunction()" > Show Password               
+                </div>
+                <button id="login_button" class="btn btn-primary" onclick="addUser()" style="font-size:20px; font-family:'Times New Roman', Times, serif; border:0px; border-radius:0;" >Get Started</button>
+                <br><br>
+                </div> <br> <br> 
+            </div>
+          </div>       
+       
+        </center>
+    </body>
+</html>
